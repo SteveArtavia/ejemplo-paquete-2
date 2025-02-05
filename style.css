@@ -4,6 +4,11 @@ body{
     box-sizing: border-box;
     background-color: black;
     color: white;
+    font-size: 20px;
+}
+nav{
+    background-color: black;
+    box-shadow: 0 0 10px 0 black;
 }
 button{
     padding: 1em;
@@ -13,12 +18,14 @@ button{
     box-shadow: 0 0 10px 0 black;
     border-radius: 0.5em;
 }
+main{
+    padding-top: 3em;
+}
 .hero{
     background-image: url("./img/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    padding-top: 3em;
     position: relative;
 }
 .hero::before {
@@ -31,12 +38,37 @@ button{
     background-color: rgba(0, 0, 0, 0.8); /* Color y opacidad del overlay */
     z-index: 1; /* Asegura que el overlay esté por encima de la imagen de fondo */
 }
+.hero h1{
+    font-size: 5em;
+}
 .hero .content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2; /* Asegura que el contenido esté por encima del overlay */
+}
+.hero .text-content{
+    display: flex;
+    flex-direction: column;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+}
+.card{
+    background-color: black;
+}
+.card img{
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .call-to-action{
@@ -52,4 +84,13 @@ footer{
 .active{
     color: rgb(214, 65, 45) !important;
     font-weight: bold;
+}
+i{
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+/* Responsividad */
+@media (max-width: 576px){
+
 }
