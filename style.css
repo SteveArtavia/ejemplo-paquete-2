@@ -66,15 +66,33 @@ main{
     background-color: black;
 }
 .card img{
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     object-position: center top;
 }
-
 .call-to-action{
     color: white;
     display: flex;
     flex-direction: column;
+}
+.cta{
+    padding: 4em;
+}
+.cta h4{
+    font-size: 2em;
+}
+.cta p{
+    margin-bottom: 3em;
+}
+.cta a{
+    border: 1px solid white;
+    border-radius: 2em; 
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+.cta a:hover{
+    background-color: rgb(190, 55, 38);
 }
 
 footer{
