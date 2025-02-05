@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Barberia [Nombre] en [Ciudad] | Cortes de Pelo y Afeitado</title>
+    <title>Contacto | [Nombre de tu empresa]</title>
     <meta name="description" content="Los mejores cortes de pelo y afeitado de barba en [Ciudad]. Barberos expertos, ambiente moderno. ¡Reserva tu cita!" />
     <meta name="keywords" content="barbería, cortes de pelo, afeitado, barba, [ciudad], [nombre de la barbería]" />
     <meta name="author" content="[Nombre del autor]" />
@@ -59,49 +59,32 @@
     </header>
 
     <main>
-        <div class="hero container-full">
-            <div  class="overlay"></div>
-            <div class="content container">
-                <div class="title">
-                    <h1>Tu barbería de confianza en [Ciudad]</h1>
-                </div>
-                <div class="text-content">
-                    <p>Te ofrecemos una experiencia de barbería de primera clase. Nuestro equipo de barberos expertos y apasionados se dedica a crear el look perfecto para ti, ya sea un corte de pelo clásico o un estilo moderno y vanguardista. Utilizamos productos de alta calidad y técnicas innovadoras para garantizar que te veas y te sientas de la mejor manera.</p>
-                    <button>Escribenos</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="servicios-container container mt-5">
-            <h2 class="text-center">Nuestros servicios destacados</h2>
-            <p>Ofrecemos una amplia gama de servicios para el
-                cuidado masculino. Desde cortes de pelo clásicos y modernos hasta
-                afeitados de barba y tratamientos faciales, nuestros barberos expertos te
-                brindarán una experiencia única.</p>
-   
-            <div class="servicios my-5">
-                <div class="servicio">
-                    <i class="fas fa-cut"></i>
-                    <h3>Corte de pelo</h3>
-                </div>
-                <div class="servicio">
-                    <i class="fas fa-brush"></i>
-                    <h3>Afeitado</h3>
-                </div>
-                <div class="servicio">
-                    <i class="fas fa-mask"></i>
-                    <h3>Tratamientos faciales</h3>
+        <section class="mt-5 container">
+            <h1>Contacto</h1>
+            <p>¿Tienes alguna pregunta o comentario? ¡No dudes en contactarnos!</p>
+        
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form action="enviar_formulario.php" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit">Enviar mensaje</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-
-        <div class="call-to-action container my-5">
-            <div class="text-content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid numquam magni dolores id, dicta consectetur exercitationem perferendis vel totam quisquam architecto nihil natus recusandae quas? Eum repellendus earum sequi.</p>
-            </div>
-            <a class="call-btn" href="servicios.html">Descubre nuestros servicios</a>
-        </div>
-
+        </section>
     </main>
 
     <footer>
