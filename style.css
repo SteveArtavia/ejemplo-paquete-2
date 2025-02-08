@@ -53,6 +53,15 @@ main{
     display: flex;
     flex-direction: column;
 }
+.hero button{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.hero .whatsapp{
+    font-size: 1em;
+
+}
 .servicios{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -129,6 +138,9 @@ i{
 .form-control:focus{
     box-shadow: none !important;
     outline: none;
+}
+.list-inline li a i:hover{
+    color: rgb(214, 65, 45);
 }
 
 /* Responsividad */
