@@ -1,3 +1,9 @@
+:root{
+    --mainColor: rgb(214, 65, 45);
+    --textColor:rgb(150, 150, 150);
+    --hoverText:grey;
+    --darkBackgroundColor:rgb(26, 26, 26);
+}
 body{
     margin: 0;
     padding: 0;
@@ -10,6 +16,12 @@ body{
 nav{
     background-color: black;
     box-shadow: 0 0 10px 0 black;
+}
+.nav-link:hover{
+    color: var(--hoverText) !important;
+}
+.navbar-brand i{
+    border: 1px solid white;
 }
 button{
     padding: 1em;
@@ -73,17 +85,30 @@ main{
     padding: 2em;
 }
 .card{
-    background-color: black;
+    border-radius: 1em 1em 0 0 !important;
+    background-color: rgb(26, 26, 26);
+    height: 30em;
+    border-radius: 1em !important;
 }
 .card img{
     height: 400px;
     object-fit: cover;
     object-position: center top;
+    border-radius: 1em 1em 0 0;
+}
+.card-body{
+    padding: 1em;
+}
+.card-body .card-text{
+
 }
 .call-to-action{
     color: white;
     display: flex;
     flex-direction: column;
+    border-radius: 1em;
+    padding: 3em;
+    background-color: rgb(26, 26, 26);
 }
 .cta{
     padding: 4em;
@@ -106,12 +131,16 @@ main{
 }
 
 footer{
+    padding-top: 3em !important;
     padding: 2em;
+    background-color: var(--darkBackgroundColor);
+}
+.copyright{
+    margin-top: 4em;
 }
 
 .active{
     color: rgb(214, 65, 45) !important;
-    font-weight: bold;
 }
 i{
     margin-bottom: 1em;
@@ -138,9 +167,7 @@ i{
 .form-control:focus{
     box-shadow: none !important;
     outline: none;
-}
-.list-inline li a i:hover{
-    color: rgb(214, 65, 45);
+    border: 1px rgb(214, 65, 45) solid;
 }
 
 /* Responsividad */
