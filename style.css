@@ -12,7 +12,7 @@ body{
     color: white;
     font-size: 20px;
     text-align: center;
-    min-height: 100dvh;
+    height: 100dvh;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
@@ -190,5 +190,11 @@ i{
 
 /* Responsividad */
 @media (max-width: 576px){
-
+    h2{
+        font-size: 2em;
+    }
+    .card{
+        height: 30em;
+        margin: 1em auto;
+    }
 }
