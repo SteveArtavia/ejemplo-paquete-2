@@ -87,6 +87,9 @@ main{
     text-align: center;
     padding: 2em;
 }
+h2{
+    font-size: 3em;
+}
 .card{
     border-radius: 1em 1em 0 0 !important;
     background-color: rgb(26, 26, 26);
