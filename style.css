@@ -196,6 +196,9 @@ i{
 
 /* Responsividad */
 @media (max-width: 576px){
+    body{
+        font-size: 1em;
+    }
     h2{
         font-size: 2em;
     }
@@ -205,6 +208,13 @@ i{
     }
     .title h1{
         font-size: 2.2em;
+    }
+    .servicios{
+        display: flex;
+        flex-direction: column;
+    }
+    .servicios i{
+        font-size: 3em;
     }
     .card{
         height: 30em;
@@ -216,5 +226,9 @@ i{
     footer .container .row{
         display: grid;
         gap: 2em;
+    }
+
+    .contacto{
+        margin-top: 0 !important;
     }
 }
